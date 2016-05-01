@@ -48,7 +48,7 @@ bool Main::toggleWindow(){
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Hello World!", sf::Style::None);     // Create and initialize the main window
+    sf::RenderWindow window(sf::VideoMode(sf::VideoMode::getDesktopMode()), "Hello World!", sf::Style::None);     // Create and initialize the main window
     Main mainLoop(&window);
     while (window.isOpen()){     // Start the game loop
         window.clear(sf::Color::White);  // Clear the screen and set the background color
